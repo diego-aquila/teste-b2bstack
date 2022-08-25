@@ -1,0 +1,642 @@
+ /* http://meyerweb.com/eric/tools/css/reset/
+ v2.0 | 20110126
+ License: none (public domain)
+ */
+ html, body, div, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code,
+ del, dfn, em, img, ins, kbd, q, s, samp,
+ small, strike, strong, sub, sup, tt, var,
+ b, u, i, center,
+ dl, dt, dd, ol, ul, li,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td,
+ article, aside, canvas, details, embed,
+ figure, figcaption, footer, header, hgroup,
+ menu, nav, output, ruby, section, summary,
+ time, mark, audio, video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+     box-sizing: border-box;
+ }
+
+ p {
+
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 0.9em;
+ }
+
+ /* HTML5 display-role reset for older browsers */
+ article, aside, details, figcaption, figure,
+ footer, header, hgroup, menu, nav, section {
+     display: block;
+ }
+
+ body {
+     line-height: 1;
+ }
+
+ ol, ul {
+     list-style: none;
+ }
+
+ blockquote, q {
+     quotes: none;
+ }
+
+ blockquote:before, blockquote:after,
+ q:before, q:after {
+     content: '';
+     content: none;
+ }
+
+ table {
+     border-collapse: collapse;
+     border-spacing: 0;
+ }
+
+ header {
+     background: linear-gradient(330deg, #15cb85 0%, #00398d 100%);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     padding: 1em;
+     width: 100%;
+
+ }
+
+ .container-header {
+
+     width: 100%;
+     display: flex;
+     gap: 1em;
+     align-items: center;
+     max-width: 1230px;
+
+
+
+
+ }
+
+ header nav {
+
+
+     display: block;
+
+
+
+ }
+
+ header nav ul {
+
+
+     display: flex;
+     gap: 1em;
+
+
+ }
+
+ header nav ul li {
+
+     font-size: 0.9rem;
+     font-family: Arial, Helvetica, sans-serif;
+     color: #FFF;
+
+
+ }
+
+ header .logo {
+     background-image: url(https://www.b2bstack.com.br/assets/v4/b2bstack-c83f3826aa93ed13c05b71b95ba243cf220140f6dadff05d2175dc0d0b8b4384.svg);
+     height: 24px;
+     width: 147px;
+     background-size: auto;
+ }
+
+
+
+ .form-header {
+     flex: 1;
+     position: relative;
+     margin-right: auto;
+     min-width: 200px;
+ }
+
+ .form-header button {
+     background-image: url(https://www.b2bstack.com.br/assets/icons/search-dc611900b7e577832bea16b2d34d431b14de9d09b8b4aba542ad285c8e7ff8b6.svg);
+     background-color: transparent;
+     cursor: pointer;
+     width: 18px;
+     height: 18px;
+     content: "";
+     background-size: contain;
+     position: absolute;
+     right: 8px;
+     top: 8px;
+     filter: invert(100%) sepia(4%) saturate(0%) hue-rotate(285deg) brightness(105%) contrast(105%);
+     text-indent: -9999px;
+     border: none;
+ }
+
+ .form-header input {
+     border-radius: 50px;
+     width: 100%;
+     padding: 0 35px 0 1em;
+     height: 35px;
+     line-height: 35px;
+     color: #011242;
+
+     border: none;
+ }
+
+ .form-header:before {
+     content: " ";
+     position: absolute;
+     right: 2px;
+     top: 2px;
+     width: 31px;
+     height: 31px;
+     background: linear-gradient(330deg, #00398d 0%, #15cb85 100%);
+     border-radius: 50%;
+ }
+
+ .button-login {
+     color: #ffffff;
+     font-weight: bold;
+     display: flex;
+     grid-gap: 0.5em;
+     line-height: 25px;
+     align-items: center;
+     background: transparent;
+     border: none;
+ }
+
+ .button-login span {
+     display: block;
+ }
+
+ .button-login:before {
+     background-image: url(https://www.b2bstack.com.br/assets/icons/user-9a278aa860729f642822063260298639be6c92eea67d3294825f80a844de21a2.svg);
+     background-repeat: none;
+     width: 25px;
+     height: 25px;
+     content: "";
+     background-size: contain;
+     margin: 0;
+ }
+
+ .anuncio-topo {
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+     background: #e8edf3;
+     width: 100%;
+     text-align: center;
+     padding: 1em;
+
+
+
+
+ }
+
+ .anuncio-topo p {
+
+     flex: 1;
+
+ }
+
+ .anuncio-topo .saiba-mais-topo {
+     background: #FFF;
+     padding: 0.3em;
+     border: 1px solid #00398d;
+     border-radius: 5px;
+     font-weight: bold;
+     text-decoration: none;
+     display: inline-block;
+     margin-top: 0.5em;
+ }
+
+ #burgermenu {
+     background-image: url(https://www.b2bstack.com.br/assets/icons/ham-95375ae30f90bfea0635a7003ee5c49e13231495680b26366f51f94913ca2657.svg);
+     background-position: center;
+     background-repeat: no-repeat;
+     width: 25px;
+     height: 25px;
+     content: "";
+     background-size: contain;
+     display: none;
+     background-size: 24px 24px;
+ }
+
+
+
+ main {
+     background: #E8EDF3;
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     margin: 0 auto;
+
+     align-items: center;
+
+ }
+
+ .container {
+
+     background: #FFF;
+
+     max-width: 100%;
+     width: 500px;
+
+
+ }
+
+ .bread-crumb {
+     padding: 1em 1em 0 1em;
+     margin: 0 auto;
+     overflow: auto;
+     width: 100%;
+     max-width: 1230px;
+     display: block;
+     white-space: nowrap;
+ }
+
+
+ .header-softwares {
+     width: 100%;
+     max-width: 1230px;
+     background: #FFF;
+     border-radius: 5px;
+
+     margin: 1em auto;
+ }
+
+ .bg-header-softtwares:after {
+     content: " ";
+     width: 100%;
+     display: block;
+     height: 4px;
+     background: linear-gradient(330deg, #15cb85 0%, #00398d 100%);
+     margin-top: -3px;
+ }
+
+ .bg-header-softtwares img {
+     width: 100%;
+     border-radius: 5px 5px 0 0;
+ }
+
+ .star.starsize-20, .star.starsize-20 .note {
+     background-size: 20px;
+     width: 100px;
+     height: 20px;
+ }
+
+ .star .note {
+     background-image: url(./assets/icons/stars-857915088ee548eacaf8155afba092c6374ac4eaea97d5f62b4bb26618f170a0.svg);
+     background-position: top left;
+     width: 100%;
+     height: 100%;
+     display: inline-block;
+ }
+
+ .act-buttons {
+     margin-left: auto;
+     display: flex;
+     gap: 20px;
+     align-items: center;
+     flex-wrap: wrap;
+     flex: 1;
+     justify-content: left;
+     margin-top: auto;
+ }
+
+ .btn-leave-review {
+
+     color: #011242;
+     text-decoration: none;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 0.85em;
+     margin-top: 10px;
+
+
+ }
+
+ .btn-leave-review:before {
+     content: " ";
+     background-image: url(./assets/icons/edit-0d4b94ab847a5ead4073d3ea2c32f2af70f49a2d02b6a97c84da3a051c12ebad.svg);
+     background-size: contain;
+     background-repeat: no-repeat;
+     width: 18px;
+     height: 18px;
+     margin-right: 5px;
+     display: inline-block;
+     filter: invert(16%) sepia(92%) saturate(1801%) hue-rotate(202deg) brightness(94%) contrast(109%);
+     vertical-align: sub;
+ }
+
+
+
+ .content-softwares {
+     width: 100%;
+     max-width: 1230px;
+     background: #FFF;
+     border-radius: 5px;
+     margin: 0 auto;
+     margin-bottom: 1em;
+     display: flex;
+     justify-content: center;
+     padding-top: 2em;
+ }
+
+ .content-softwares h3 {
+
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 1.2em;
+     font-weight: bold;
+     margin-bottom: 1.5em;
+
+ }
+
+ .container-content-softwares {
+
+     padding: 20px;
+     width: 100%;
+     max-width: 500px;
+
+
+ }
+
+ .form-info {
+     position: relative;
+ }
+
+ .form-info label {
+
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 0.8em;
+     font-weight: bold;
+     position: absolute;
+     left: 15px;
+     background-color: #FFF;
+     margin-top: -10px;
+     padding: 5px;
+
+ }
+
+ .form-info input, select {
+     width: 100%;
+     max-width: 100%;
+     padding: 1em;
+     border-radius: 10px;
+     border: 1px solid #DDD;
+     margin-bottom: 1em;
+     box-sizing: border-box;
+
+ }
+
+ .button-save {
+
+     padding: 10px 18px 10px 18px;
+     background: #15cb85;
+     border: none;
+     border-radius: 5px;
+
+ }
+
+
+ footer {
+     background: #d9e0eb;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+
+ }
+
+
+
+ footer:before {
+     content: " ";
+     width: 100%;
+     height: 10px;
+     background: linear-gradient(330deg, #15cb85 0%, #00398d 100%);
+     display: block;
+ }
+
+ .container-footer {
+     display: flex;
+     flex-wrap: wrap;
+     max-width: 1230px;
+     width: 100%;
+     gap: 1em;
+
+     justify-content: space-between;
+     padding: 2em;
+
+ }
+
+ .container-footer div * {
+
+
+     color: #00398d;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 0.95em;
+
+
+ }
+
+ .container-footer div ul li a {
+     padding: 0.3em 0;
+     display: block;
+ }
+
+
+
+
+ footer .copyright {
+     padding: 0.5em 1em;
+     text-align: center;
+     background-color: #e8edf3;
+     border-top: 1px solid #7a99c8;
+     color: #00398d;
+     font-weight: bold;
+     font-size: 1em;
+     width: 100%;
+ }
+
+ footer h4 {
+     font-weight: bold !important;
+     margin-bottom: 1em;
+ }
+
+ footer a {
+     text-decoration: none;
+ }
+
+ .info-empresa {
+     display: flex;
+     flex-direction: column;
+     gap: 1em;
+     margin-bottom: 3em;
+ }
+
+ .info-empresa .logo-footer {
+     width: 100%;
+     max-width: 170px;
+ }
+
+
+
+ .social img {
+
+     filter: invert(16%) sepia(92%) saturate(1801%) hue-rotate(202deg) brightness(94%) contrast(109%);
+
+ }
+
+ .invisible {
+     display: none;
+ }
+
+
+
+ .logo-empresa figure {
+
+     background: #FFF;
+     width: 200px;
+     height: 200px;
+     max-width: 180px;
+     border-radius: 10px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     box-shadow: 0px 2px 10px 0px rgb(0 0 0 / 15%);
+     padding: 1em;
+     margin-top: -90px;
+
+
+
+
+ }
+
+ .logo-empresa figure img {
+
+
+     max-width: 100%;
+     max-height: 53px;
+
+
+ }
+
+ .info-empresa-softwares {
+     padding: 1em;
+ }
+
+ .container-info {
+     display: flex;
+     gap: 1em;
+ }
+
+ .stamp em {
+     background-image: url(./assets/icons/verified-5bc4ee407e78d30700c1806b7bd607d1e743b7dc7a356c3f794c2f34ec14e2d6.svg);
+     background-repeat: no-repeat;
+     background-size: contain;
+     width: 16px;
+     height: 16px;
+     content: " ";
+     display: block;
+ }
+
+ .stamp.trusted em {
+     filter: invert(62%) sepia(26%) saturate(5136%) hue-rotate(116deg) brightness(103%) contrast(84%);
+ }
+
+ .product-info h1 {
+
+     display: flex;
+     gap: 0.3em;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: bold;
+ }
+
+ .btn {
+     background-color: #15CB85;
+     border: #15CB85;
+     display: flex;
+     padding: 1em;
+     border-radius: 10px;
+     color: #011242;
+     text-decoration: none;
+     font-weight: bold;
+     align-items: center;
+     gap: 0.4em;
+ }
+
+ @media (max-width: 768px) {
+
+     #burgermenu {
+         display: block;
+         width: 35px;
+         height: 35px;
+     }
+
+     .button-login span {
+         display: none;
+     }
+
+     header nav {
+
+
+         display: none;
+
+     }
+
+     header .logo {
+
+         background-image: url(https://www.b2bstack.com.br/assets/v4/b2bstack-c83f3826aa93ed13c05b71b95ba243cf220140f6dadff05d2175dc0d0b8b4384.svg);
+         height: 40px;
+         width: 50px;
+         background-size: cover;
+     }
+
+     .logo-empresa figure {
+
+
+         margin-top: 0px;
+
+
+
+
+     }
+
+
+
+ }
+
+ @media (max-width: 444px) {
+
+
+
+     .bg-header-softtwares img {
+
+         display: none;
+     }
+
+     .logo-empresa figure {
+
+
+         width: 140px;
+         height: 140px;
+
+
+
+
+     }
+
+ }
